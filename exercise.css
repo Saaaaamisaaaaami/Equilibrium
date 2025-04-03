@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #f3e8d6;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #000000;
+}
+
+/* Saved Plans Section */
+.saved-plans {
+    background: #f5e1ff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #9b59b6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7d3c98;
+}
+
+/* Upcoming Sessions */
+.upcoming-sessions {
+    background: #f5e1ff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.session {
+    background: white;
+    padding: 10px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Saved Plans Section with Scroll */
+.saved-plans {
+    background: #f5e1ff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    max-height: 400px;  /* Fixed height with scroll */
+    overflow-y: auto;   /* Vertical Scroll */
+}
+
+.plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Favourites Section with Scroll */
+.favourites {
+    background: #f3e8d6;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    max-height: 300px;     /* Fixed height with scroll */
+    overflow-x: auto;       /* Horizontal Scroll */
+    white-space: nowrap;    /* Prevent wrapping */
+}
+
+.fav-container {
+    display: inline-flex;   /* Ensures inline scrolling */
+    gap: 20px;
+}
+
+.fav-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan-box img, .fav-box img {
+    width: 100%;            /* Full width of the box */
+    height: 150px;          /* Fixed height */
+    object-fit: cover;      /* Crop to fit */
+    border-radius: 8px 8px 0 0;  /* Rounded corners on top */
+    margin-bottom: 10px;    /* Space between image and text */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="balance.css">
+        <script type="text/javascript" src="testing.js" defer></script>
+        <title>Assessment Tests</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Assessment Tests</h1>
+    </div>
+    <div class="video-container">
+        <div class="video-box" data-duration="30">
+            <h2>Balance Test</h2>
+            <p id="time1">Duration: 6 minutes 52 seconds</p>
+            <button class="video-btn" onclick="startVideo(1,'https://www.youtube.com/watch?v=DwlN7PCLkkA')">Start</button>
+        </div>
+    
+        <!-- Box 2 -->
+        <div class="video-box" data-duration="45">
+            <h2>Grip Strength Test</h2>
+            <p id="time2">Duration: 1 minute 50 seconds </p>
+            <button class="video-btn" onclick="startVideo(2, 'https://www.youtube.com/watch?v=sdRUBhKj2nM')">Start</button>
+        </div>
+    
+        <!-- Box 3 -->
+        <div class="video-box" data-duration="20">
+            <h2>Reaction Time Test</h2>
+            <p id="time3">Duration: 3 minutes 22 seconds</p>
+            <button class="video-btn" onclick="startVideo(2, 'https://www.youtube.com/watch?v=jlTFJXisRoM')">Start</button>
+        </div> 
+
+        <div class="video-box" data-duration="20">
+            <h2>Vision Test</h2>
+            <p id="time4">Duration: 6 minutes 17 seconds</p>
+            <button class="video-btn" onclick="startVideo(3, 'https://www.youtube.com/watch?v=YXErzl-cIe8')">Start</button>
+        </div> 
+
+        <button class="see-more-btn" onclick="toggleProfile()">See More</button>
+    </div>
+</body>

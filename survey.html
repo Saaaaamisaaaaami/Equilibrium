@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questions.css">
+    <script defer src="script.js"></script>
+    <title>Survey Page</title>
+</head>
+<body>
+    <div id="surveyContainer">
+        <div class="container">
+            <h2>Survey Form</h2>
+            
+            <form id="surveyForm">
+                <!-- Questions -->
+                <div class="question">
+                    <p>1. Which of the following do you suffer from? ~Tap all that applies~</p>
+                    <div class="options">
+                        <label><input type="checkbox" name="q1"> Arthritis</label>
+                        <label><input type="checkbox" name="q1"> Sight issues</label>
+                        <label><input type="checkbox" name="q1"> Cardiac disease</label>
+                        <label><input type="checkbox" name="q1"> Inner ear problems</label>
+                        <label><input type="checkbox" name="q1"> Diabetes</label>
+                        <label><input type="checkbox" name="q1"> Narcolepsy</label>
+                        <label><input type="checkbox" name="q1"> Fainting disorders</label>
+                        <input type="text" class="other-input" placeholder="Other">
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>2. Do these diseases affect you?</p>
+                    <div class="options">
+                        <label><input type="checkbox" name="q2"> Very much</label>
+                        <label><input type="checkbox" name="q2"> Often</label>
+                        <label><input type="checkbox" name="q2"> Not really</label>
+                        <label><input type="checkbox" name="q2"> No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>3. How would you describe your daily activity?</p>
+                    <div class="options">
+                        <label><input type="checkbox" name="q3">Very Active</label>
+                        <label><input type="checkbox" name="q3"> Moderately Active</label>
+                        <label><input type="checkbox" name="q3"> Slightly Active</label>
+                        <label><input type="checkbox" name="q3"> Inactive</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>4. What time of day do you prefer to exercise? ~Tap all that applies~</p>
+                    <div class="options">
+                        <label><input type="checkbox" name="q4">Morning</label>
+                        <label><input type="checkbox" name="q4">Midday</label>
+                        <label><input type="checkbox" name="q4">Evening</label>
+                        <label><input type="checkbox" name="q4">Night</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>5. What motivates you to exercise? ~Tap all that applies~</p>
+                    <div class="options">
+                        <label><input type="checkbox" name="q5">Health</label>
+                        <label><input type="checkbox" name="q5"> Aesthetic Goals</label>
+                        <label><input type="checkbox" name="q5"> Social Influence</label>
+                        <label><input type="checkbox" name="q5"> Stress Relief</label>
+                        <label><input type="checkbox" name="q5"> Weight Loss</label>
+                        <label><input type="checkbox" name="q5"> Muscle Gain</label>
+                        <label><input type="checkbox" name="q5"> Flexibility</label>
+                        <label><input type="checkbox" name="q5"> General Health</label>
+                        <input type="text" class="other-input" placeholder="Other">
+                    </div>
+                </div>
+
+
+            <div class="question">
+                <p>6. What type of physical activities do you prefer? ~Tap all that applies~ </p>
+                <div class="options">
+                    <label><input type="checkbox" name="q5">Walking</label>
+                    <label><input type="checkbox" name="q5"> Martial Arts</label>
+                    <label><input type="checkbox" name="q5"> Yoga or Pilates</label>
+                    <label><input type="checkbox" name="q5"> Cycling</label>
+                    <label><input type="checkbox" name="q5"> Long-distance running</label>
+                    <label><input type="checkbox" name="q5">Stretching</label>
+                    <label><input type="checkbox" name="q5">Zumba</label>
+                    <input type="text" class="other-input" placeholder="Other">
+
+                </div>
+            </div>
+
+            <div class="question">
+                <p>7. How long would you prefer a typical workout session to be?</p>
+                <div class="options">
+                    <label><input type="checkbox" name="q5">Less than 15 minutes</label>
+                    <label><input type="checkbox" name="q5">15-30 minutes</label>
+                    <label><input type="checkbox" name="q5">30-45 minutes</label>
+                    <label><input type="checkbox" name="q5">1 hour or more</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>8. Do you use any mobility aids?</p>
+                <div class="options">
+                    <label><input type="checkbox" name="q5"> Cane</label>
+                    <label><input type="checkbox" name="q5"> Walker</label>
+                    <label><input type="checkbox" name="q5"> Wheelchair</label>
+                    <label><input type="checkbox" name="q5">None</label>
+                    <input type="text" class="other-input" placeholder="Other">
+
+                </div>
+            </div>
+
+            <div class="question">
+                <p>9. How often do you go outdoors?</p>
+                <div class="options">
+                    <label><input type="checkbox" name="q5">Daily</label>
+                    <label><input type="checkbox" name="q5">Few times a week</label>
+                    <label><input type="checkbox" name="q5">Rarely</label>
+                    <label><input type="checkbox" name="q5">Never</label>
+                    <input type="text" class="other-input" placeholder="Other">
+                </div>
+            </div>
+
+            <div class="question">
+                <p>10.  How often do you engage in social activities?</p>
+                <div class="options">
+                    <label><input type="checkbox" name="q5">Very often</label>
+                    <label><input type="checkbox" name="q5"> Mostly </label>
+                    <label><input type="checkbox" name="q5"> Occasionally</label>
+                    <label><input type="checkbox" name="q5"> Never</label>
+               </div>
+            </div>
+
+                <!-- Navigation Buttons -->
+                <div class="btn-container">
+                    <button type="button" id="prevBtn" onclick="prevQuestion()">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextQuestion()">Next</button>
+                    <button type="button" id="submitBtn" onclick="submitSurvey()">Submit</button>
+                </div>
+            </form>
+
+            <p class="thank-you" id="thankYouMessage">
+                Thank you for filling in this survey. We will offer more personalised plans and sessions.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="iamhome.css">
+    <script type="text/javascript" src="wheretheheartis.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome User!</h1>
+    </div>
+
+    <!-- Navigation Box -->
+    <div class="homepage-nav-box">
+        <button class="health">What's On The Health Front?</button>
+        <ul class="nav-bar">
+            <li><a href="community.html">Community</a></li>
+            <li><a href="falling.html">Fall Assessment Test</a></li>
+            <li><a href="chatbot.html">AI Coach</a></li>
+            <li><a href="exerciseplan.html">Exercise Plans</a></li>
+        </ul>
+    </div>
+
+    <!-- Vitals & Image Section -->
+    <div class="main-section">
+        <!-- Vitals Box -->
+        <div class="card">
+            <div class="vital-item">
+                <img src="https://cdn.apollohospitals.com/health-library-prod/2021/06/shutterstock_1236631984-scaled.jpg" alt="Heart Rate Icon" class="vital-icon">
+                <div>
+                    <div class="label">Heart Rate</div>
+                    <div id="heartRate" class="value">-- BPM</div>
+                </div>
+            </div>
+        
+            <div class="vital-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/2755/2755818.png" alt="Breath Rate Icon" class="vital-icon">
+                <div>
+                    <div class="label">Breath Rate</div>
+                    <div id="breathRate" class="value">-- BPM</div>
+                </div>
+            </div>
+        
+            <div class="vital-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/006/460/389/non_2x/sleep-rgb-color-icon-person-sleeping-soundly-in-bed-dreaming-man-commonplace-day-to-day-human-life-healthy-lifestyle-habits-sleep-isolated-illustration-simple-filled-line-drawing-vector.jpg" alt="Sleep Pattern Icon" class="vital-icon">
+                <div>
+                    <div class="label">Sleep Pattern</div>
+                    <div id="sleepPattern" class="value">-- Hours</div>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Imagesubheads Box -->
+        <div class="imagesubheads">
+            <img src="https://caringhealthcaresc.com/wp-content/uploads/2019/05/Caring-Healthcare-Elderly-Stretching-Exercies.jpg" alt="Elderly Stretching">
+            <h2>Want to make it more personalised? <br>Check out the survey <a href="survey.html">here.</a></h2>
+        </div>
+    </div>
+
+    <!-- Recommendations Section -->
+    <div class="Recommendations">
+        <button class="recommendations">Recommendations - Friends, Sessions and More!</button>
+        
+        <div class="info-container">
+            <!-- Info Box 1 -->
+            <div class="info-box1">
+                <img src="https://images.pexels.com/photos/5928630/pexels-photo-5928630.jpeg" alt="Info Image 1">
+                <p>Practicing Mindfulness with Dr. Emma Geller-Greene</p>
+                <button onclick="addToPlan('Practicing Mindfulness')">Add To Plan</button>
+            </div>
+  
+            <!-- Info Box 2 -->
+            <div class="info-box2">
+                <img src="https://blog.nasm.org/hubfs/benefits-of-stretching.jpg" alt="Info Image 2">
+                <p>Warm-Up Stretches with Trainer Benjamin Geller</p>
+                <button onclick="addToPlan('Warm-Up Stretches')">Add To Plan</button>
+            </div>
+
+            <!-- Info Box 3 -->
+            <div class="info-box3">
+                <img src="https://images.pexels.com/photos/19601385/pexels-photo-19601385.jpeg" alt="Info Image 3">
+                <p>Analysing Sleep with Dr Park</p>
+                <button onclick="addToPlan('Analysing Sleep')">Add To Plan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Box -->
+    <div class="profile-box" id="profileBox">
+        <img src="https://media.istockphoto.com/id/1257088545/photo/portrait-of-a-smiling-woman-sitting-outdoors.jpg?s=612x612&w=0&k=20&c=nlAGMR_vpHtX8DmpAQHy_go3OpNN0oYUEx1uENvbOoE=" alt="Profile Picture" class="profile-pic">
+        <p class="title">Tara Campbell, age 65</p>
+        <p class="bio">Likes martial arts, black belt in taekwondo. Enjoys walking on the beach, playing guitar, and puppies.</p>
+    
+        <div class="profile-buttons">
+            <button onclick="alert('Followed!')">Follow</button>
+            <button onclick="alert('Message Sent!')">Message</button>
+        </div>
+    </div>
+
+<button class="see-more-btn" onclick="toggleProfile()">See More</button>
+
+<footer class="footer">
+    <div class="footer-container">
+<div class="footer-social">
+    <a href="#"><img src="https://img.freepik.com/premium-vector/facebook-vector-social-media-icon_459124-520.jpg?semt=ais_hybrid" alt="Facebook"></a>
+    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuH7c5cLpGehi0b4iQk90fXUzC9p7Ebla13w&s" alt="Instagram"></a>
+    <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+</div>
+  <!-- Copyright & Credits -->
+  <div class="footer-info">
+    <p>&copy; 2025 Health Hub. All Rights Reserved.</p>
+    <p>Designed with ❤️ by Samriddhi</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+h1 {
+    font-size: 4rem;        /* Large header */
+    color: #333;            /* Dark color */
+    margin: 40px 0;         /* Add space around the header */
+    text-align: center;     
+    letter-spacing: 2px;    /* Stylish spacing */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:#beb9ff;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Container to hold the boxes */
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px;
+    flex-wrap: wrap;             /* Wrap to next line if needed */
+}
+
+/* Styling for each box */
+.video-box {
+    width: 400px;                /* Large box */
+    height: 250px;               /* Uniform height */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background: #f4f4f4;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* Hover effect */
+.video-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Title styling */
+.video-box h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Duration text */
+.video-box p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.video-btn {
+    width: 160px;
+    height: 50px;
+    font-size: 20px;              /* Large text */
+    color: black;
+    background: #beb9ff;          /* Blue color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;    /* Capitalize text */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* Button hover effect */
+.video-btn:hover {
+    background:#f3e8d6;
+    transform: scale(1.05);
+    color:black
+}
+.see-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 45px;  /* Increased horizontal padding */
+    background: #beb9ff;
+    color: black;
+    font-size: 30px;
+    border: none;
+    border-radius: 15px;  /* More rounded edges for a pill shape */
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 70%;  /* Makes it more horizontal */
+    max-width: 300px;  /* Ensures it doesn't get too wide on larger screens */
+    text-align: center; /* Centers the text inside the button */
+}
+
+/* Button hover effect */
+.see-more-btn:hover {
+    background: #f5e1ff;
+    transform: scale(1.05);  /* Slight hover effect for better UX */
+}

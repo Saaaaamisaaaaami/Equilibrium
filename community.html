@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger App</title>
+    <link rel="stylesheet" href="community.css">
+    <script defer src="community.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <h2>Contacts</h2>
+            <ul id="contacts-list">
+                <li onclick="openChat('Alice')">
+                    <img src="https://media.istockphoto.com/id/1485050002/photo/portrait-of-a-senior-adult-black-female-on-a-city-street-looking-at-the-camera.jpg?s=612x612&w=0&k=20&c=N6si_Ra3Ebvi86lIzQ_WN77YZ2Xgd1rNbAr0XEzINCA=" alt="Alice" class="profile-pic"> Alice
+                </li>
+                <li onclick="openChat('Bob')">
+                    <img src="https://img.freepik.com/free-photo/portrait-wise-person_52683-100915.jpg" alt="Bob" class="profile-pic"> Bob
+                </li>
+                <ul id="contacts-list">
+                    <li onclick="openChat('Dana')">
+                        <img src="https://www.shutterstock.com/shutterstock/videos/1102892517/thumb/9.jpg?ip=x480" alt="Dana" class="profile-pic">Dana
+                    </li>
+                    <li onclick="openChat('Lila')">
+                        <img src="https://media.istockphoto.com/id/1188861557/photo/smiling-senior-woman-relaxing-at-home-in-the-afternoon.jpg?s=612x612&w=0&k=20&c=nrY8JL0qAY9ptPxBbIyKU6kEWPvIBMNQntaZtl6qe6s=" alt="Lila" class="profile-pic">Lila
+                    </li>
+                    <li onclick="openChat('Charlie')">
+                        <img src="https://www.shutterstock.com/image-photo/portrait-happy-senior-man-smiling-600nw-2290596777.jpg" alt="Charles" class="profile-pic"> Charles
+                    </li>
+    <li onclick="openChat('Study Group', true)">
+        <img src="group1.jpg" alt="The Grams" class="profile-pic"> The Grams
+    </li>
+    <li onclick="openChat('Friends', true)">
+        <img src="https://chiliving.com/wp-content/uploads/2019/07/running-after-60.jpg" alt="Jogger Friends" class="profile-pic"> Jogging Troop!
+    </li>
+            </ul>
+            <p>What are you waiting for? Let's find some more friends <a href="find-friends.html">here</a>.</p>
+        </div>
+        <div class="chat-window">
+            <h3 id="chat-title">Select a contact</h3>
+            <div id="messages"></div>
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
